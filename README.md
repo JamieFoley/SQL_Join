@@ -8,7 +8,7 @@ To import the data into my local PostgreSQL database, I have developed an [autom
 
 ## Identifying Missing Data
 
-Initially, I planned to query the `world_data_2023` table directly. However, I noticed some encoding errors with certain non-Latin characters in the `world_data_2023` table. To avoid potential issues when querying, I decided to investigate the rows containing missing data.
+Initially, I planned to query the `world_data_2023` table directly. However, I noticed some encoding errors with certain non-Latin characters in `country`, `capitalmajor_city`, and `largest_city` columns in the `world_data_2023` table. To avoid potential issues when querying, I decided to investigate the rows containing missing data.
 
 To achieve this, I ran the following query to get a closer look at the rows with non-Latin characters in the `country`, `capitalmajor_city`, and `largest_city` columns:
 
