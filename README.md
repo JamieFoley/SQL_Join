@@ -51,9 +51,9 @@ This is the resulting table:
 | United States       | Washington, D.C.       | New York City          |
 
 ## Populating Missing Data with Joins
-To address the missing data, I decided to join the world_data_2023 table with another table containing an extensive list of world cities (worldcities). The common column between the two tables is the abbreviation, which represents the country code.
+To address the missing data, I decided to join the world_data_2023 table with another table containing an extensive list of world cities `worldcities`. `abbreviation` and `iso2`, which represent the country code, are identical, and will be used to join the tables to eachother.
 
-By leveraging Common Table Expressions (CTEs) and window functions, I populated the capitalmajor_city and largest_city columns. The use of CTEs allowed me to efficiently filter out duplicate results for countries with more than one capital.
+By leveraging Common Table Expressions (CTEs) and window functions, I populated the `capitalmajor_city` and `largest_city` columns. The use of CTEs allowed me to efficiently filter out duplicate results for countries with more than one capital.
 
 Here's the query to populate the columns:
 
